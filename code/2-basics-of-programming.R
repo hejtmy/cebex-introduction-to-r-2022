@@ -46,7 +46,7 @@ num <-(
 10 * 7
 pi * pi * 5
 
-# Capitalization -----
+## Capitalization -----
 
 num <- 5
 Num <- 7
@@ -55,7 +55,7 @@ Name <- "Lukas"
 
 name
 
-# Naming variables -------
+## Naming variables -------
 
 n <- 8
 name1 <- "Lukas"
@@ -79,7 +79,7 @@ age_my <- 32
 age_mother <- 57
 age_father <- 64
 
-# Data types -------
+## Data types -------
 ?toupper
 toupper(5)
 
@@ -117,6 +117,25 @@ F
 6 %% 4
 
 # day+week <- 7
+
+### Lists ------
+me_age <- 32
+me_name <- "Lukas"
+
+me <- list(name = "Lukas",
+           age = 32,
+           gender = "male",
+           education = TRUE)
+
+random_guy <- list(name = "John",
+                   age = NA,
+                   gender = "unknown",
+                   education = TRUE)
+
+# is me in reatirement???
+me$age > 65
+random_guy$gender == "male"
+
 
 ## Comparing operations -----
 
@@ -178,7 +197,7 @@ id <- as.character(id)
 
 is_smoking <- c(0,1,0,1,0,0,1)
 
-# NA NULL -------
+## Missing variables -------
 NA
 NaN
 
@@ -188,7 +207,7 @@ Name <- NULL
 Name
 
 
-# Checking for types -------
+## Checking for types -------
 class(Name)
 class(age_my)
 
@@ -199,3 +218,13 @@ is.character(age_my)
 test_results <- NA
 # check if results are NA ...?
 is.na(test_results)
+
+## Comments -------
+# Created by Lukas Hejtmanek for Cebex
+# This filters outliers out of the datase
+
+### Numbers ----
+#### Subchapters on numbers  -----
+#' This is gonna be a long comment
+#' and this comment continues
+
