@@ -35,7 +35,6 @@ str(df_data)
 head(df_data)
 summary(df_data)
 
-
 # Other datasets ------
 ?USArrests
 summary(USArrests)
@@ -68,3 +67,19 @@ USArrests[grepl("A", USArrests$states), ]
 # get all state information (rows) in th top 10th percentile in Assault
 USArrests[USArrests$Assault > quantile(USArrests$Assault, probs = 0.9), ]
 
+head(USArrests)
+USArrests[,1]
+USArrests[,1:2]
+
+USArrests[,"Murder"]
+USArrests[,c("Murder", "states")]
+
+USArrests$Murder
+USArrests$M
+USArrests[,c("M")]
+
+USArrests[, "Murder"]
+USArrests[, Murder]
+
+var_name <- "Murder"
+USArrests[, var_name]
